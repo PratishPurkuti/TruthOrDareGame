@@ -1,0 +1,80 @@
+:root {
+    --primary: #ffebee;
+    --primary-dark: #ff8a80;
+    --secondary: #ff5252;
+    --accent: #ff1744;
+    --text-dark: #263238;
+    --text-light: #ffffff;
+  }
+  
+  .hero-section {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    min-height: 80vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero-section-gameload {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    min-height: 80vh;
+    position: relative;
+    overflow: hidden;
+  }
+h1{
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+form{
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3') center/cover;
+    opacity: 0.1;
+  }
+  
+  .game-mode-card {
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.95);
+  }
+  
+  .game-mode-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-custom {
+    background-color: var(--secondary);
+    color: var(--text-light);
+    border-radius: 25px;
+    padding: 12px 30px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-custom:hover {
+    background-color: var(--accent);
+    transform: translateY(-2px);
+  }
+  
+  .feature-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .testimonial-section {
+    background-color: var(--primary);
+  }
