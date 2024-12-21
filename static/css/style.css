@@ -19,6 +19,7 @@
     min-height: 80vh;
     position: relative;
     overflow: hidden;
+    align-content: center;
   }
 h1{
   max-width: fit-content;

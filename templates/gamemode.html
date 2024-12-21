@@ -7,96 +7,71 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    <style>
-               /* From Uiverse.io by EddyBel */ 
-.input__container {
-  max-width: 200px;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  background: rgba(255, 255, 255, 0.3);
-  padding: 15px;
-  border-radius: 20px;
-  position: relative;
+<style>
+  /* From Uiverse.io by alexmaracinaru */ 
+.card {
+ width: 190px;
+ height: 254px;
+ background: #3405a3;
+ border-radius: 15px;
+ box-shadow: 1px 5px 60px 0px #100a886b;
+ align-content: center;
+ justify-content: center;
+ margin-bottom: 1rem;
+ margin-left: 20px;
 }
 
-.input__container::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  filter: blur(25px);
-  border-radius: 20px;
-  background-color: #e499ff;
-  background-image: radial-gradient(at 47% 69%, hsla(17,62%,65%,1) 0px, transparent 50%),
-radial-gradient(at 9% 32%, hsla(222,75%,60%,1) 0px, transparent 50%);
+.card .card-border-top {
+ width: 60%;
+ height: 3%;
+ background: #6b64f3;
+ margin: auto;
+ border-radius: 0px 0px 15px 15px;
 }
 
-.input__label {
-  display: block;
-  margin-left: 0.4em;
-  color: #000;
-  text-transform: uppercase;
-  font-size: 0.9em;
-  font-weight: bold;
+.card span {
+ font-weight: 600;
+ color: white;
+ text-align: center;
+ display: block;
+ padding-top: 10px;
+ font-size: 16px;
 }
 
-.input__description {
-  font-size: 0.6em;
-  font-weight: bold;
-  text-align: center;
-  color: rgba(0, 0, 0, 0.5);
+.card .job {
+ font-weight: 400;
+ color: white;
+ display: block;
+ text-align: center;
+ padding-top: 3px;
+ font-size: 12px;
 }
 
-.input {
-  border: none;
-  outline: none;
-  width: 100%;
-  padding: 0.6em;
-  padding-left: 0.9em;
-  border-radius: 20px;
-  background: #fff;
-  transition: background 300ms, color 300ms;
+.card .img {
+ width: 70px;
+ height: 80px;
+ background: #6b64f3;
+ border-radius: 15px;
+ margin: auto;
+ margin-top: 25px;
 }
 
-.input:hover,.input:focus {
-  background:rgb(3, 185, 137) 0px; /* rgb(217, 69, 163); */
-  color: #151313;
+.card button {
+ padding: 8px 25px;
+ display: block;
+ margin: auto;
+ border-radius: 8px;
+ border: none;
+ margin-top: 30px;
+ background: #6b64f3;
+ color: white;
+ font-weight: 600;
 }
 
-/* From Uiverse.io by cssbuttons-io */ 
-button {
-    margin-top: 10px;
-  padding: 1.3em 3em;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
-  font-weight: 500;
-  color: #000;
-  background-color: #fff;
-  border: none;
-  border-radius: 45px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-  outline: none;
+.card button:hover {
+ background: #534bf3;
 }
-
-button:hover {
-  background-color: #23c483;
-  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-  color: #fff;
-  transform: translateY(-7px);
-}
-
-button:active {
-  transform: translateY(-1px);
-}
-
-    </style>
+</style>
 </head>
 <body>
     <!-- Navigation -->
@@ -118,7 +93,15 @@ button:active {
 
     <!-- Hero Section -->
 <div class="hero-section-gameload">
-yooooo
+  <div class="card">
+    <div class="card-border-top">
+    </div>
+    <div class="img">
+    </div>
+    <span> Classic</span>
+    <p class="job">Family friendly</p>
+    <button><a style="color: azure;"href="classic">Start</a></button>
+  </div>
 </div>
 
     <!-- Footer -->
