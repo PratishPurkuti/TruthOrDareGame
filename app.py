@@ -1,9 +1,10 @@
 from flask import Flask, render_template, session , request ,redirect
 from truthanddare import TruthQ,DareQ
 import random
+import os
 
 app = Flask(__name__)
-app.secret_key = 'kaloseto'
+app.secret_key = os.environ.get('SECRET_KEY', 'default-secret-key')
 
 @app.route('/')
 def index():
