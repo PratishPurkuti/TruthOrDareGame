@@ -44,11 +44,24 @@
     </style>
 </head>
 <body>
-
-    <div class="player">It's {{name}}'s Turn </div>
-    <button class="btn" id="truth-btn"><a href="truth">Truth</a></button>
-    <button class="btn" id="dare-btn"><a href="dare">Dare</a></button>
-    <div class="output" id="output"></div>
-
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-danger" href="/">Truth or Dare</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="btn btn-custom ms-2" href="https://www.instagram.com/pratish.exe">Instagram</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="hero-section-gameload">{{randoms}}
+        <br>
+        <button class="btn"><a href="classic">Back</a></button>
+    </div>
 </body>
 </html>
