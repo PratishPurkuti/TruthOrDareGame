@@ -33,7 +33,7 @@ def playername():
             players.append(player_name)  # Add the name to the list
         session["players"] = players
         # Pass the players list to the next template if needed
-        return render_template('Gamemode.html', players=players)
+        return render_template('gamemode.html', players=players)
     
     # Handle GET requests
     Number = session.get('Number', 0)
