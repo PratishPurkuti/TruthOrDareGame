@@ -15,7 +15,7 @@
   }
   
   .hero-section-gameload {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    background: rgb(234, 160, 234);
     min-height: 80vh;
     position: relative;
     overflow: hidden;
@@ -29,6 +29,10 @@ form{
   max-width: fit-content;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 150px;
+  background-color: rgb(239, 110, 110);
+  padding: 10px;
+  border-radius: 7%;
 }
   .hero-overlay {
     position: absolute;

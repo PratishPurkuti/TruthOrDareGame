@@ -8,7 +8,7 @@
     <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <style>
-        /* From Uiverse.io by EddyBel */ 
+               /* From Uiverse.io by EddyBel */ 
 .input__container {
   max-width: 200px;
   display: flex;
@@ -67,30 +67,33 @@ radial-gradient(at 9% 32%, hsla(222,75%,60%,1) 0px, transparent 50%);
   color: #151313;
 }
 
-/* From Uiverse.io by absoluteSTrange */ 
+/* From Uiverse.io by cssbuttons-io */ 
 button {
-  padding: 17px 40px;
-  border-radius: 10px;
-  border: 0;
-  background-color: rgb(255, 56, 86);
-  letter-spacing: 1.5px;
-  font-size: 15px;
-  transition: all 0.3s ease;
-  box-shadow: rgb(201, 46, 70) 0px 10px 0px 0px;
-  color: hsl(0, 0%, 100%);
+    margin-top: 10px;
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
   cursor: pointer;
+  outline: none;
 }
 
 button:hover {
-  box-shadow: rgb(201, 46, 70) 0px 7px 0px 0px;
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
 }
 
 button:active {
-  background-color: rgb(255, 56, 86);
-  /*50, 168, 80*/
-  box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
-  transform: translateY(5px);
-  transition: 200ms;
+  transform: translateY(-1px);
 }
 
     </style>
@@ -114,22 +117,10 @@ button:active {
     </nav>
 
     <!-- Hero Section -->
-    <div class="hero-section-gameload">
-        <!-- <form>
-            <h1>Just a little longer</h1>
-            <label for="Number">Number of Players:</label>
-            <input type="Number" max="15" name="Number" id="Number">
-        </form> -->
-<form action="/gameload" method="POST">
-<div class="input__container">
-  <label class="input__label">No. of Players (2-15)</label>
-  <input placeholder="Enter No. of players" class="input" id="number" name="number" type="number" max="15">
-  <p class="input__description">Made by <a href="https://www.instagram.com/pratish.exe">Pratish</a></p>
-  <button type="submit" class="form-btn">Next</button>
-
+<div class="hero-section-gameload">
+yooooo
 </div>
-</form>
-    </div>
+
     <!-- Footer -->
     <footer class="bg-dark text-light py-4">
         <div class="container text-center">
